@@ -254,3 +254,19 @@
   });
 
 })()
+
+
+// $(document).ready(function(){
+//   $("#check").validate({
+//     rules:{
+//       name:{
+//         required:true
+//       }
+//     },
+//     messages:{
+//       name:{
+//       required:"enter name"
+//       }
+//     }
+//   })
+// })
