@@ -1,9 +1,4 @@
-/**
-* Template Name: iPortfolio - v3.7.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -254,19 +249,44 @@
   });
 
 })()
+// const form=document.querySelector('#check'); 
+// const nameInput =document.querySelector('#name');
+// FormData.addEventListener('submit',(event)=>{
+//       event.preventDefault();
+// });
 
 
-// $(document).ready(function(){
-//   $("#check").validate({
-//     rules:{
-//       name:{
-//         required:true
-//       }
-//     },
-//     messages:{
-//       name:{
-//       required:"enter name"
-//       }
+//   function validateform(){
+
+//     if(nameInput.value.trim()==''){
+//       setError(nameInput,'Name not be empty')
 //     }
-//   })
-// })
+//   }
+
+//   function setError(element,errorMessage ){
+//     const parent =element.parentElement;
+//     parent.ClassList.add('error');
+//   }
+$(document).ready(function(){
+  $("#check").validate({
+    rules:{
+      name:{
+        required:true
+      },
+      email:{
+        required:true,
+        email:true,
+    
+      }
+     
+    },
+    messages:{
+      name:{
+      required:"enter your name",
+      },
+      email:{
+        required:"enter your email",
+      }
+    }
+  })
+})
