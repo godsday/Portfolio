@@ -8,6 +8,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -198,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/aaa.jpg") top center;
+  background: url("../img/covver.jpg") top center;
   background-size: cover;
 }
 #hero:before {
